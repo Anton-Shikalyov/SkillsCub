@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SplashFragment">
+
+    <fragment
+        android:id="@+id/RestartAppFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm_start.RestartAppFragment"
+        tools:layout="@layout/fragment_restart_app">
+        <action
+            android:id="@+id/action_RestartAppF_to_Login"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm_start.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_RestartAppFragment"
+            app:destination="@id/RestartAppFragment" />
+
+        <action
+            android:id="@+id/action_LoginFragment_to_NotAuthFragment"
+            app:destination="@id/NotAuthFragment" />
+
+        <action
+            android:id="@+id/action_LoginFragment_to_PasswordFragment"
+            app:destination="@id/PasswordFragment"
+            app:restoreState="true" />
+
+        <action
+            android:id="@+id/action_LoginFragment_to_CreatePassFragment"
+            app:destination="@id/CreatePassFragment"
+            app:restoreState="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/PasswordFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm_start.passw.EnterPassFragment"
+        tools:layout="@layout/fragment_enter_pass">
+
+        <action
+            android:id="@+id/action_PasswordFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+        <action
+            android:id="@+id/action_PasswordFragment_to_PositionFragment"
+            app:destination="@id/PositionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/NotAuthFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm_start.error_auth.ErrorAuthFragment"
+        tools:layout="@layout/fragment_error_auth">
+
+        <action
+            android:id="@+id/action_NotAuthFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+
+        <action
+            android:id="@+id/action_NotAuthFragment_to_PositionFragment"
+            app:destination="@id/PositionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm_start.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_SplashFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_SplashFragment_to_NotAuthFragment"
+            app:destination="@id/NotAuthFragment" />
+        <action
+            android:id="@+id/action_SplashFragment_to_RestartAppFragment"
+            app:destination="@id/RestartAppFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/CreatePassFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm_start.create_pass.CreatePasswFragment"
+        tools:layout="@layout/fragment_create_passw">
+        <action
+            android:id="@+id/action_CreatePassFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_CreatePassFragment_to_PositionFragment"
+            app:destination="@id/PositionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PositionFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm_start.position.PositionFragment"
+        tools:layout="@layout/fragment_position">
+
+        <action
+            android:id="@+id/action_PositionFragment_to_NotAuth"
+            app:destination="@id/NotAuthFragment" />
+    </fragment>
+</navigation>

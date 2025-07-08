@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="learning_process">Learning process</string>
+    <string name="passed">Passed on</string>
+    <string name="test_btn">Final test</string>
+    <string name="programs">Programs</string>
+    <string name="steps">Steps</string>
+    <string name="termin">Termin</string>
+
+</resources>

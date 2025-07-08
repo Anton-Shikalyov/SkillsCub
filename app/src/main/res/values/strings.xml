@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Skillscub</string>
+
+    <!-- Strings used for fragments for bottom navigation -->
+
+    <string name="title_home">Home</string>
+    <string name="title_dictionary">Dictionary</string>
+    <string name="title_help">Help</string>
+    <string name="title_profile">My profile</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="logout">Logout</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sections">Sections</string>
+    <string name="change_position">Change position</string>
+    <string name="application_theme">Application theme</string>
+    <string name="change_password">Change password</string>
+    <string name="account_deactivation_request">Account Deactivation request</string>
+    <string name="system">System</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+
+    <string name="error_response">something went wrong try again</string>
+    <string name="deactivation_res">Account Deactivation request</string>
+    <string name="deactivation_description"> After deleting your account, it will be impossible to restore your profile, course progress, and achievements</string>
+    <string name="send_request">Send request</string>
+    <string name="learn_more">Learn more</string>
+
+    <string name="test_result">Test result</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="correct">Correct</string>
+    <string name="everything_is_clear">Is everything clear?</string>
+    <string name="rate">Rate</string>
+    <string name="write_you_option">Write your opinion</string>
+    <string name="feedback">Feedback</string>
+    <string name="you_have_missed_tests">You have missed tests.</string>
+    <string name="complete">Complete</string>
+    <string name="take_skiped_tests">Take skiped tests</string>
+
+</resources>

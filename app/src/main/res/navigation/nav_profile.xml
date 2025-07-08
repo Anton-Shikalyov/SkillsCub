@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_profile"
+    app:startDestination="@id/ProfileFragment">
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.profile.ProfileFragment"
+        android:label="fragment_profile_position"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_ProfileFragment_to_positionFragment"
+            app:destination="@id/positionProfileFragment" />
+        <action
+            android:id="@+id/action_ProfileFragment_to_changePassFragment"
+            app:destination="@id/changePassFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/positionProfileFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.profile.position.ProfilePositionFragment"
+        android:label="fragment_profile_position"
+        tools:layout="@layout/fragment_profile_position" />
+
+    <fragment
+        android:id="@+id/changePassFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.profile.change_pass.UpdatePassFragment"
+        android:label="fragment_change_pass"
+        tools:layout="@layout/fragment_change_pass" />
+
+</navigation>

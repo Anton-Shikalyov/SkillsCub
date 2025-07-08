@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dn_dark_light_logo">#FDFFFF</color>
+    <color name="dn_background_main">#14171F</color>
+    <color name="dn_text">#F0EDFF</color>
+    <color name="dn_frame">#1C1D27</color>
+    <color name="theme_frame">#1C1D27</color>
+
+</resources>

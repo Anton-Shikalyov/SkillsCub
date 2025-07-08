@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home"
+    app:startDestination="@id/DashboardFragment">
+
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.dashboard.DashboardFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_DashboardFragment_to_SectionFragment"
+            app:destination="@id/SectionFragment"
+            app:popUpToInclusive="true"
+            app:restoreState="true"
+            app:popUpToSaveState="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/SectionFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.sections.SectionFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_sections">
+        <action
+            android:id="@+id/action_SectionFragment_to_StepsFragment"
+            app:destination="@id/StepsFragment"
+            app:popUpTo="@id/SectionFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_SectionFragment_to_DashboardFragment"
+            app:destination="@id/DashboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StepsFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.steps.StepListFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_step_list">
+        <action
+            android:id="@+id/action_StepsFragment_to_LessonFragment"
+            app:destination="@id/LessonFragment"
+            app:popUpTo="@id/StepsFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_StepsFragment_to_SectionFragment"
+            app:destination="@id/SectionFragment"
+            app:popUpTo="@id/StepsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LessonFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.lesson.LessonFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_lesson">
+<!--        <action-->
+<!--            android:id="@+id/action_StepsFragment_to_LessonFragment"-->
+<!--            app:destination="@id/LessonFragment"-->
+<!--            app:popUpTo="@id/StepsFragment"-->
+<!--            app:popUpToInclusive="true"/>-->
+        <action
+            android:id="@+id/action_LessonFragment_to_StepsFragment"
+            app:destination="@id/StepsFragment" />
+        <action
+            android:id="@+id/action_LessonFragment_to_LessonTrueFalse"
+            app:destination="@id/LessonTrueFalse"
+            app:popUpTo="@id/LessonFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_LessonFragment_to_LessonChooseOptionFragment"
+            app:destination="@id/LessonRightOption"
+            app:popUpTo="@id/LessonFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_LessonFragment_to_LessonMediaOptionFragment"
+            app:destination="@id/LessonMediaOption"
+            app:popUpTo="@id/LessonFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LessonTrueFalse"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.lessons.true_false.LessonTrueFalseFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_lesson_true_false"/>
+
+    <fragment
+        android:id="@+id/LessonRightOption"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.lessons.choose_right_option.LessonChooseOptionFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_lesson_choose_option"/>
+
+    <fragment
+        android:id="@+id/LessonMediaOption"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.lessons.choose_right_media.ChooseMediaOptionFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_choose_media_option"/>
+
+    <fragment
+        android:id="@+id/TestResultFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.lessons.test_result.TestResultFragment"
+        tools:layout="@layout/fragment_test_result">
+        <action
+            android:id="@+id/action_TestResultFragment_to_StepsFragment"
+            app:destination="@id/StepsFragment"
+            app:popUpTo="@id/TestResultFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_TestResultFragment_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment"
+            app:popUpTo="@id/TestResultFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm_start.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash"/>
+
+    <fragment
+        android:id="@+id/FeedbackFragment"
+        android:name="com.lab42.skillsclub.presentation.mvvm.home.feedback.FeedbackFragment"
+        tools:layout="@layout/fragment_feedback">
+        <action
+            android:id="@+id/action_feedbackFragment_to_StepsFragment"
+            app:destination="@id/StepsFragment"
+            app:popUpTo="@id/FeedbackFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

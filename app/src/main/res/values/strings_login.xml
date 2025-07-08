@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="previous">Previous</string>
+    <string name="restart">Restart app</string>
+    <string name="try_again">Try again</string>
+    <string name="error">Error</string>
+<!--    <string name="error_sentence">Error getting the configuration. Restart the application</string>-->
+    <string name="error_sentence">Error getting the configuration. Restart connection</string>
+    <string name="search">Search</string>
+
+    // LogIn
+    <string name="log_in">Log in</string>
+    <string name="log_in_pass">Create password &amp; Log In</string>
+    <string name="enter_login">Enter your details to Log In</string>
+    <string name="enter_login_error">Is not find</string>
+    <string name="error_sentence_log_in">Something went wrong</string>
+
+
+    //  Enter pass
+    <string name="password">Enter password</string>
+    <string name="enter_y_login">Enter your login</string>
+    <string name="enter_password">Enter password to Log in app</string>
+    <string name="enter_y_pass">Enter your password</string>
+    <string name="new_pass">New password</string>
+    <string name="repeat_new_pass">Repeat new password</string>
+    <string name="back">Back</string>
+    <string name="skip">Skip</string>
+    <string name="error_pass">Error! Invalid password. Try again</string>
+    <string name="forgot_pass">Forgot password</string>
+    <string name="dont_match_pass">passwords don\'t match</string>
+
+//  Create pass
+    <string name="create_password">Create a password</string>
+    <string name="create_new_password"> Create a new password to Log in app</string>
+    <string name="repeat_password">Repeat new password</string>
+    <string name="error_create_pass">Error! Invalid password. Try again</string>
+
+//  Error auth
+    <string name="error_auth">Authorization Error</string>
+    <string name="error_auth_sentence">Please check your internet connection or press the button below</string>
+
+    <string name="choose_position">Choose your position</string>
+    <string name="confirm">Confirm and continue</string>
+    <string name="empty"> </string>
+    <string name="submit">Submit</string>
+
+    <string name="pass_test">Pass a test</string>
+    <string name="repass_test">Repass a test</string>
+
+    <string name="_continue">Continue</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="27dp"
+    android:height="27dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+
+    <group
+        android:name="magnifier">
+        <path
+            android:pathData="M9.80589,2.31506A7.49047,7.49047 0 1,1 2.31542,9.80553A7.49047,7.49047 0 0,1 9.80589,2.31506Z"
+            android:strokeColor="@color/dn_text"
+            android:strokeWidth="1.5"/>
+        <path
+            android:pathData="M15.0156 15.4043L17.9523 18.3334"
+            android:strokeColor="@color/dn_text"
+            android:strokeWidth="1.5"
+            android:strokeLineJoin="round"/>
+    </group>
+</vector>

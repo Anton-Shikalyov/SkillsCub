@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_dictionary"
+    app:startDestination="@id/DictionaryFragment">
+
+    <fragment
+        android:id="@+id/DictionaryFragment"
+        tools:layout="@layout/fragment_dictionary"
+        android:name="com.lab42.skillsclub.presentation.mvvm.dictionary.dictionary.DictionaryFragment"
+        android:label="@string/title_dictionary">
+        <action
+            android:id="@+id/action_DictionaryFragment_to_TerminFragment"
+            app:destination="@id/TerminFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/TerminFragment"
+        tools:layout="@layout/fragment_termin"
+        android:name="com.lab42.skillsclub.presentation.mvvm.dictionary.termin.TerminFragment"
+        android:label="@string/termin">
+        <action
+            android:id="@+id/action_TerminFragment_to_DictionaryFragment"
+            app:destination="@id/DictionaryFragment"
+            app:popUpTo="@id/TerminFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+</navigation>

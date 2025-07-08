@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dn_background_main"
+    tools:context=".presentation.mvvm.profile.change_pass.UpdatePassFragment">
+
+    <EditText
+        android:id="@+id/new_pass_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/enter_field"
+        android:gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:hint="@string/new_pass"
+        android:textColor="@color/dn_text"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/repeat_new_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/enter_field"
+        android:gravity="center_vertical"
+        android:hint="@string/repeat_new_pass"
+        android:textColor="@color/dn_text"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:singleLine="true"
+        android:textColorHint="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/new_pass_change" />
+
+    <TextView
+        android:id="@+id/pass_repeat_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/repeat_new_pass"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/dont_match_pass"
+        android:textColor="@color/red_error"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_new_pass" />
+
+    <Button
+        android:id="@+id/btn_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/sh_blue_btn"
+        android:text="@string/change_password"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
