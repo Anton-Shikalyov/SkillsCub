@@ -2,7 +2,7 @@
 
 ## ⚙️ Overview
 
-This project is a demo representation of key elements (UI layout, architecture, data models) from a commercial Android application originally developed for **[Lab42.dev](https://lab42.dev)**. It is published here with the company’s explicit permission for the purpose of showcasing my technical skills in mobile development.
+This project is a demo representation of key elements (UI layout, architecture, data models) from a commercial Android application originally developed for **[Lab42.dev]((https://lab42.dev/en))** / **[Linkedin](https://www.linkedin.com/company/lab42dev/posts/?feedView=all)**. It is published here with the company’s explicit permission for the purpose of showcasing my technical skills in mobile development.
 
 All sensitive, proprietary, or business logic components (e.g., networking, services, authorization, production logic) have been **excluded or anonymized**.
 
