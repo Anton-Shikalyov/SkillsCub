@@ -1,7 +1,8 @@
 <p align="center">
       <img src="/images/logo.png" alt="Project Logo" width="100%">
 </p>
-# 📱 Project Showcase: Mobile App UI & Architecture Demo
+
+## 📱 Project Showcase: Mobile App UI & Architecture Demo
 
 ## ⚙️ Overview
 
