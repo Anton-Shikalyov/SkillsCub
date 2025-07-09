@@ -42,9 +42,9 @@ All rights to original product branding, content, and core logic remain with the
 
 ## 👋 About Me
 
-I’m a **full-stack developer** with a focus on Android and web development. I love building modular, clean, and scalable solutions.
+Hi, I’m a ** full-stack developer**  with three years of commercial experience, specializing in Android and full-stack web development. I have a solid background in building scalable, user-friendly applications from scratch using modern technologies like Kotlin, Java, Node.js/NestJS, and Angular. I'm proactive in solving complex problems and have successfully led multiple projects from concept to production. My work has received positive feedback from both clients and managers, and I can provide references or recommendation letters upon request.
 
-If you’d like to learn more about the original project or discuss collaboration, feel free to [contact me](mailto:your.email@example.com) or visit my [portfolio](https://your-portfolio.com).
+If you’d like to learn more about the original project or discuss collaboration, feel free to [contact me](https://t.me/antxnio_x) or visit my [portfolio](https://www.linkedin.com/in/anton-shikalyov/).
 
 ---
 
