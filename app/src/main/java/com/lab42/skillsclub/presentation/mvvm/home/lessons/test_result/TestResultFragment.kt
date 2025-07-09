@@ -75,15 +75,13 @@ class TestResultFragment : Fragment() {
         val toolbarBinding = TestToolbarBinding.inflate(layoutInflater, container, false)
         container.addView(toolbarBinding.root)
 
-        toolbarBinding.backBtn.setOnClickListener{
-            homeViewModel.clearDataSilent()
-            homeViewModel.setRoute(
-                RouteBundle(R.id.StepsFragment, null)
-            )
+        binding.btnResultTest.setOnClickListener {
+            homeViewModel.setRoute(RouteBundle(R.id.FeedbackFragment, null))
         }
 
-        binding.btnResultTest.setOnClickListener {
-            backBtn()
+        toolbarBinding.backBtn.setOnClickListener{
+            homeViewModel.clearDataSilent()
+                backBtn()
         }
 
         requireActivity().onBackPressedDispatcher.addCallback {

@@ -67,8 +67,6 @@ class DictionaryFragment : Fragment() {
         recyclerDictionary.adapter = DictionaryAdapter(emptyList(), viewModel)
 
         viewModel.dictList.observe(viewLifecycleOwner) {
-            Log.i("zczczczcx", it.toString())
-
             dictionaryViewModel.setState(AppState.Success(""))
             recyclerDictionary.adapter = DictionaryAdapter(it, viewModel)
         }
@@ -114,6 +112,7 @@ class DictionaryFragment : Fragment() {
         }
 
         requireActivity().onBackPressedDispatcher.addCallback {
+            findNavController().navigate(R.id.DictionaryFragment)
         }
     }
 
